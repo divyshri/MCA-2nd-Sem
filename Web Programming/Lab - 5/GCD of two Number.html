@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			font-family : cambria;
+			color: green;
+			text-align: center;
+			font-size : 45px; 
+			text-shadow: 2px 1px 10px green;
+		}
+		h3{
+			font-family : cambria;
+			color: red;
+			text-align: center;
+			font-size : 20px; 
+			text-shadow: 2px 1px 10px red;
+		}
+		</style>
+		<script type = "text/javascript">
+			var num1 = window.prompt("Enter First number");
+			var num2 = window.prompt("Enter Second number");
+			var gcd =1;
+			num1 = parseInt(num1);
+			num2 = parseInt(num2);
+			var i=1;
+			
+			for( ;i<=num1 && i<=num2 ; i++)
+			{
+				i = parseInt(i);
+				if(num1 % i == 0 && num2 % i == 0)
+					gcd = i;
+			}
+			document.write("<br><h1>GCD of the entered number is  " + gcd + " <h1><br>");				
+				
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

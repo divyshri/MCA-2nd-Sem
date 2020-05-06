@@ -1,0 +1,38 @@
+
+<html>
+	<head>
+		<title>*****diamond*****</title>
+		<style>
+		</style>
+		<script type = "text/javascript">
+			var limit = window.prompt("Enter the limit ");
+			var i,j;
+			limit = parseInt(limit);
+			var space = limit;
+			for (i = 1; i <= limit; i++) {
+				for (j = 1; j <= space; j++) {
+					document.write("&nbsp&nbsp");
+				}
+				space--;
+				for (j = 1; j <= 2 * i - 1; j++) {
+					document.write("*");
+				}
+				document.write("<br>");
+			}
+
+			space = 2;
+			for (i = 1; i <= limit; i++) {
+				for (j = 1; j <= space; j++) {
+					document.write("&nbsp&nbsp");
+				}
+				space++;
+				for (j = 1; j <= 2 * (limit - i) - 1; j++) {
+					document.write("*");
+				}
+				document.write("<br>");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

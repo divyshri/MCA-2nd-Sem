@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>
+			Basic DOM Functionality
+		</title>
+		<script src = "dom.js"></script>
+		<style>
+			h1, h3 { 
+				text-align: center;
+				font-family: tahoma, geneva, sans-serif; 
+			}
+			p { 
+				margin-left: 5%;
+				margin-right: 5%;
+				font-family: arial, helvetica, sans-serif; 
+			}
+			ul { 
+				margin-left: 10%; 
+			}
+			a { 
+				text-decoration: none; 
+			}
+			a:hover { 
+				text-decoration: underline; 
+			}
+			.nav { 
+				width: 100%;
+				
+				padding-top: 10px; 
+			}
+			
+			input { 
+				width: 150px; 
+			}
+			form > p { 
+				margin: 0px; 
+			}
+		</style>
+
+	</head>
+<body>
+<h1 id = "bigheading" class = "highlighted"> JAVA Script Program to Demonstrate Dom</h1>
+
+<ul id = "list">
+	<li id = "item1">getElementById and parentNode</li>
+	<li id = "item2">insertBefore and appendChild</li>
+	<li id = "item3">replaceChild and removeChild</li>
+</ul>
+
+<div id = "nav" class = "nav">
+
+	<form onsubmit = "return false" action = "#">
+		<p>
+			<input type = "text" id = "gbi" value = "bigheading">
+			<input type = "button" value = "Get By id" id = "byIdButton">
+		</p>
+		<p>
+			<input type = "text" id = "ins">
+			<input type = "button" value = "Insert Before" id = "insertButton">
+		</p>
+		<p>
+			<input type = "text" id = "append">
+			<input type = "button" value = "Append Child" id = "appendButton">
+		</p>
+		<p>
+			<input type = "text" id = "replace">
+			<input type = "button" value = "Replace Current" id = "replaceButton()">
+		</p>		
+		<p>
+			<input type = "button" value = "Remove Current" id = "removeButton">
+		</p>		
+		<p>
+			<input type = "button" value = "Get Parent" id = "parentButton">
+		</p>
+	</form>
+</div>
+</body>
+</html>

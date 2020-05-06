@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			font-family : cambria;
+			color: green;
+			text-align: center;
+			font-size : 45px; 
+			text-shadow: 2px 1px 10px green;
+		}
+		h3{
+			font-family : cambria;
+			color: red;
+			text-align: center;
+			font-size : 20px; 
+			text-shadow: 2px 1px 10px red;
+		}
+		</style>
+		<script type = "text/javascript">
+			var base = window.prompt("Enter Base number");
+			var expo = window.prompt("Enter Exponent number");
+			base = parseInt(base);
+			expo = parseInt(expo);
+			var final=1;
+			while(expo>0)
+			{
+				final = final * base;
+				expo--;
+			}
+			document.write("<br><h1>Value is  " + final + " <h1><br>");				
+				
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>
+			Welcome !!!
+		</title>
+		<style>
+		h1{
+			text-align: center;
+			font-family : cambria;
+			color: green;
+			font-size : 45px; 
+			text-align :center;
+			text-shadow: 2px 1px 10px green;
+		}
+		</style>
+		
+		<script type = "text/javascript">
+			var num = window.prompt("Please Enter any number");
+			num = parseInt(num);
+			var temp, newnum=0;
+			temp = num;
+			temp = parseInt(temp);
+			while(temp>0)
+			{
+				newnum = parseInt(newnum);
+				var t = temp %10;
+				t = parseInt(t);
+				newnum = (newnum *10) + t;
+				newnum = parseInt(newnum);
+				temp = temp / 10;
+				temp = parseInt(temp);
+			}
+			newnum = parseInt(newnum);
+			
+			if (newnum == num)
+				document.writeln("<h1>Entered number is palindrome </h1>");
+			else
+				document.writeln("<h1>Entered number is not a palindrome </h1>");
+				
+				
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

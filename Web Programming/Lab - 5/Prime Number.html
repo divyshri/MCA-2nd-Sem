@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			font-family : cambria;
+			color: green;
+			text-align: center;
+			font-size : 45px; 
+			text-shadow: 2px 1px 10px green;
+		}
+		h3{
+			font-family : cambria;
+			color: red;
+			text-align: center;
+			font-size : 20px; 
+			text-shadow: 2px 1px 10px red;
+		}
+		</style>
+		<script type = "text/javascript">
+			var num1 = window.prompt("Enter any number");
+			num1 = parseInt(num1);
+			var flag = false;
+			for(var i=2;i<num1;i++)
+			{
+				if(num1 % i == 0)
+				{
+					flag= true;
+					break;
+				}
+			}
+			if(!flag)
+				document.write("<br><h1>Entered number is a Prime Number <h1><br>");
+			else
+				document.write("<br><h1>Entered number is not a Prime Number <h1><br>");
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

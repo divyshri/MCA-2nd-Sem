@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			text-align: center;
+			font-family : cambria;
+			color: green;
+			font-size : 45px; 
+			text-align :center;
+			text-shadow: 2px 1px 10px green;
+		}
+		</style>
+		<script type = "text/javascript">
+			var num,total=0,avg,i=0;
+			num = window.prompt("Enter number to calculate average -1 to exit");
+			num = parseInt(num);
+			while(num != -1)
+			{
+				total += num;
+				num = window.prompt("Enter number to calculate average -1 to exit");
+				num = parseInt(num);
+				i = i + 1;
+			}
+			if(i!=0)
+			{
+				avg = total / i;
+				avg = parseInt(avg);
+				document.writeln("<h1>The average of the entered number is " + avg + "</h1>");
+			}
+			else
+			{
+				document.writeln("<h1>No Grades are entered</h1>");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

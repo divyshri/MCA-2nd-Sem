@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			font-family : cambria;
+			color: green;
+			text-align: center;
+			font-size : 45px; 
+			text-shadow: 2px 1px 10px green;
+		}
+		h3{
+			font-family : cambria;
+			color: red;
+			text-align: center;
+			font-size : 20px; 
+			text-shadow: 2px 1px 10px red;
+		}
+		</style>
+		<script type = "text/javascript">
+			var num1 = window.prompt("Enter first number");
+			var num2 = window.prompt("Enter second number");
+			var num3 = window.prompt("Enter third number");
+			document.write("<br><h1>Square of entered number is <h1><br>");
+			document.write("<h3>Square of " + num1 + " is = " + num1*num1 + " <h3>");			
+			document.write("<h3>Square of " + num2 + " is = " + num2*num2 + " <h3>");
+			document.write("<h3>Square of " + num3 + " is = " + num3*num3 + " <h3>");
+			document.write("<br><h1>Minimum of entered number is <h1><br>");
+			var min = Math.min(num1,Math.min(num2,num3));
+			document.write("<h3> " + min + " <h3>");
+			
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

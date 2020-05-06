@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			Welcome !!!
+		</title>
+		<style>
+		h1{
+			text-align: center;
+			font-family : cambria;
+			color: green;
+			font-size : 45px; 
+			text-align :center;
+			text-shadow: 2px 1px 10px green;
+		}
+		</style>
+		<script type = "text/javascript">
+			var	num1 = window.prompt("Please Enter first number");
+			var num2 = window.prompt("Enter marks of the Second Subject");
+			var num3 = window.prompt("Enter marks of the Third Subject");
+			num1 = parseInt(num1);
+			num2 = parseInt(num2);
+			num3 = parseInt(num3);
+			
+			var total = num1 + num2 + num3;
+			var grade = total/3;
+			document.writeln("<h1>Total Marks obtained by the student is " + total + "</h1>")
+			if(grade >=75)
+				document.writeln("<h1>Grade of the student is Distinction </h1>");
+			else if(grade>=60 && grade <75)
+				document.writeln("<h1>Grade of the student is B</h1>");
+			else if(grade>=45 && grade <60)
+				document.writeln("<h1>Grade of the student is C</h1>");
+			else if(grade>=33 && grade <45)
+				document.writeln("<h1>Grade of the student is D</h1>");
+			else if(grade<33)
+				document.writeln("<h1>The Student is Failed</h1>");			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

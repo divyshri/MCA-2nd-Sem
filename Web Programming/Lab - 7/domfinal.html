@@ -1,0 +1,32 @@
+<html>
+<head><title>DOM Demo</title></head>
+<body>
+<button onclick="add()">Click to add new button</button><br><br>
+<button onclick="remove()">Click to remove button</button><br><br>
+<button onclick="replace()">Click to replace button</button><br><br>
+
+<script>
+function add()
+{
+	var btn=document.createElement("button");
+	btn.innerHTML="New Button";
+	document.body.appendChild(btn);
+}
+function remove()
+{
+var dbtn=document.getElementsByTagName("button");
+document.body.removeChild(dbtn[dbtn.length-1]);
+}
+
+function replace()
+{
+	var nbtn=document.createElement("button");
+	nbtn.innerHTML="Replaced button";
+	
+	var dbtn=document.getElementsByTagName("button");
+	document.body.replaceChild(nbtn,dbtn[dbtn.length-1]);
+}
+
+</script>
+</body>
+</html>

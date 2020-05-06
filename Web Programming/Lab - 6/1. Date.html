@@ -1,0 +1,47 @@
+<html>
+ <head>
+ <style>
+ input[type=date] {
+			  width: 250px;
+			  padding: 12px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  position:relative;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  
+			  font-family:Cambria;
+			}
+ .btn{
+			padding:15px; 
+			margin-top:50px;
+			margin-left:560px; 
+			border-radius:5px;
+			width:100px;
+			height:50px;
+			}
+	p{
+		margin-top:50px;
+		margin-left:480px;
+		font-family:Cambria;
+	}
+ </style>
+ </head>
+ <body>
+ <p>Select Date
+ <input type="date" class ="text" id="dt"></p>
+ <br>
+ <input type="button" class="btn" value="Submit"  onclick="abc()">
+  
+ </body>
+</html>
+ <script>
+	function abc()
+{ 
+var d=document.getElementById("dt").value;
+ var x=new Date(d);
+document.write(x);
+document.write(getUTCDate());
+}	
+
+ </script>

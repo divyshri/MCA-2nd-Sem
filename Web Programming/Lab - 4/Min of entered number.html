@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			text-align: center;
+			font-family : cambria;
+			color: green;
+			font-size : 45px; 
+			text-align :center;
+			text-shadow: 2px 1px 10px green;
+		}
+		</style>
+		<script type = "text/javascript">
+			var num,min=-1;
+			num = window.prompt("Enter number to calculate average -1 to exit");
+			num = parseInt(num);
+			min = num;
+			min = parseInt(min);
+			while(num != -1)
+			{
+				if(num<min)
+					min = num;
+				min = parseInt(min);
+				num = window.prompt("Enter number to calculate average -1 to exit");
+				num = parseInt(num);
+			}
+			document.writeln("<h1>Minimum number from the entered number is = " + min + " </h1>");
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

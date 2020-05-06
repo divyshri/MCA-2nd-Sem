@@ -1,0 +1,48 @@
+<html>
+<head><title>Collection Example</title>
+<style>
+img{
+height:100px;
+width:100px;
+padding:10px;
+}
+</style>
+
+</head>
+<body>
+<img src="Z:\MCA second sem\WP LAB\DOM Assignment\image\mah.jpg">
+<img src="Z:\MCA second sem\WP LAB\DOM Assignment\image\mpt.jpg">
+<img src="Z:\MCA second sem\WP LAB\DOM Assignment\image\tel.jpg">
+<img src="Z:\MCA second sem\WP LAB\DOM Assignment\image\tan.jpg">
+<a name="html" href="#">HTML</a>
+<a name="css" href="#">CSS</a>
+<a name="js" href="#">JavaScript</a>
+<form>
+First name:<input type="text" name="fname">
+</form>
+<p id="d1"></p>
+<button onclick="veiw()">To count image in page</button>
+<p id="d2"></p>
+<button onclick="anchor()">To count link in page</button>
+<p id="d3"></p>
+<button onclick="formm()">To count form tag</button>
+</body>
+<script>
+
+function veiw(){
+var collection=document.images.length;
+document.getElementById("d1").innerHTML="Total images in page are:"+ collection;
+ }
+ 
+ function anchor()
+ {
+	var length=document.anchors.length;
+	document.getElementById("d2").innerHTML="Total links in page are:"+ length;
+ }
+function formm()
+{var len=document.forms.length;
+	document.getElementById("d3").innerHTML="Total links in page are:"+ len;
+}
+</script>
+
+</html>

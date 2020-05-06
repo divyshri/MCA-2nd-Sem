@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<style>
+			#p1, #p2{
+				text-align: center;
+				font-family : cambria;
+				color: green;
+				font-size : 45px; 
+				
+				text-shadow: 2px 1px 10px green;
+			}	
+			.btn{
+			padding:15px; 
+			margin-top:50px;
+			margin-left:560px; 
+			border-radius:5px;
+			width:100px;
+			height:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<button onclick="add()" class="btn" style="background-color:lightgreen; ">add</button>
+		<button onclick="remove()" class="btn"  style="margin-left:15px;background-color:lightpink; ">remove</button>
+		<div id="div1">
+			<p id="p1" style="padding:15px; "> Demo Line</p>
+			<p id="p2"> The Action Starts Here</p>
+		</div>
+		<script>
+			var para;
+			var element;
+			var child;
+			function add()
+			{
+				para = document.createElement("p");
+				child = document.getElementById("p1"); 
+				node = document.createTextNode("Dynamically Added Line");
+				para.appendChild(node);
+				element = document.getElementById("div1");
+				element.appendChild(para);
+			}
+			function remove()
+			{
+				var parent = document.getElementById("div1");
+				var child1 = document.getElementById("p1");
+				parent.removeChild(child);
+			}
+		</script>
+	</body>
+</html>

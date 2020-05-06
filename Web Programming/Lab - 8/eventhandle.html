@@ -1,0 +1,20 @@
+<html>
+<head>
+<script>
+function handleEvent()
+{
+window.alert("The Event was handle successfully");
+}
+function registerHandler()
+{
+var trad=document.getElementById("trad");
+trad.onclick= handleEvent();
+}
+</script>
+</head>
+<body onload="registerHandler()">
+<div id="inline" onclick="handleEvent()"> Inline Registration Model</div>
+<div id="trad"> traditional Registration Model</div>
+</body>
+
+</html>

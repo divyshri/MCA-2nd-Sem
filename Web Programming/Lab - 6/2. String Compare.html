@@ -1,0 +1,63 @@
+<html>
+<head>
+<style>
+input[type=text] {
+			  width: 250px;
+			  padding: 12px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  position:relative;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  font-family:Cambria;
+			}
+ .btn{
+			padding:15px; 
+			margin-top:50px;
+			margin-left:560px; 
+			border-radius:5px;
+			width:100px;
+			height:50px;
+			}
+	p{
+		margin-top:50px;
+		margin-left:480px;
+		font-family:Cambria;
+	}
+	</style>
+</head>
+
+<body>
+<form>
+<p>String 1:<input type="text" id="str1"></p>
+<p>String 2:<input type="text" id="str2"></p>
+<input type="submit" onclick="fun()" class="btn">
+</form>
+<script>
+function fun()
+{
+	var x=document.getElementById("str1").value;
+	var y=document.getElementById("str2").value;
+	var arr=[]
+	for(var i=0;i<26;i++)
+	{
+		arr[i]=0
+	}
+	
+	for(var i=0;i<x.length;i++)
+	{
+		arr[x.charCodeAt(i)-97]++
+	}
+	document.write("<table >")
+	for(var i=0;i<26;i++)
+	{
+		document.write("<tr><td>"+String.fromCharCode(i+97)+"</td><td>"+arr[i]+"</tr>")
+	}
+	document.write("</table>")
+	if(x==y)document.write("Same <br>")
+	else if(x>y)document.write("1st is Bigger <br>")
+	else document.write("2nd is Bigger <br>")
+}
+</script>
+</body>
+</html>

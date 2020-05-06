@@ -1,0 +1,122 @@
+<html>
+	
+	<head>
+		<title>
+			Introduction to Input Types
+		</title>
+		<style>
+			input[type=text], select {
+			  width: 250px;
+			  padding: 12px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  position:relative;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			}
+			input[type=password], select {
+			  width: 250px;
+			  padding: 12px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  position:relative;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			}
+
+			input[type=submit] {
+			  width: 250px;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 10px;
+			  border: none;
+			  border-radius: 4px;
+			  margin-left:50px;
+			}
+			input[type=reset] {
+			  width: 250px;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 10px;
+			  border: none;
+			  border-radius: 4px;
+			  margin-left:50px;
+			}
+			input[type=radio] {
+			  width: 100px;
+			  color: white;
+			  padding: 10px;
+			  }
+			 input[type=checkbox] {
+			  width: 100px;
+			  color: white;
+			  padding: 10px;
+			  }
+			div{
+				width:auto;
+				height:200px;
+				background-color:lightgrey;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2 style = "text-align:center;">Form to demostrate input type "TEXT"</h2>
+			<form>
+				<label >First Name	</label> &nbsp;
+				<input type="text" name="firstname" placeholder="Enter Name"></br>
+				<label >Last Name	</label>&nbsp;
+				<input type="text" name="lastname" placeholder="Enter Last Name"></br>
+				
+			</form>
+		</div>
+		
+		<div>
+			<h2 style = "text-align:center;">Form to demostrate input type "PASSWORD"</h2>
+			<form>
+				<label >Username 	</label>&nbsp;
+				<input type="text" name="username" placeholder="Enter Username"></br>
+				<label >Password	</label>&nbsp;
+				<input type="password" name="password" placeholder="Enter Password"></br>
+			</form>
+		</div>
+		<div>
+			<h2 style = "text-align:center;">Form to demostrate input type "SUBMIT"</h2>
+			<form>
+				<label >First Name	</label>&nbsp;
+				<input type="text" name="firstname" placeholder="Enter Name"></br>
+				<label >Last Name	</label>&nbsp;
+				<input type="text" name="lastname" placeholder="Enter Last Name"></br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div>
+			<h2 style = "text-align:center;">Form to demostrate input type "RESET"</h2>
+			<form>
+				<label >First Name	</label>&nbsp;
+				<input type="text" name="firstname" placeholder="Enter Name"></br>
+				<label >Last Name	</label>&nbsp;
+				<input type="text" name="lastname" placeholder="Enter Last Name"></br>
+				<input type="reset" value="Reset">
+			</form>
+		</div>
+		<div>
+			<h2 style = "text-align:center;">Form to demostrate input type "RADIO"</h2>
+			<form>
+				<input type="radio" name="gender" value="male" checked> Male<br>
+				<input type="radio" name="gender" value="female"> Female<br>
+				<input type="radio" name="gender" value="other"> Other
+			</form>
+		</div>
+		<div>
+			<h2 style = "text-align:center;">Form to demostrate input type "CHECKBOX"</h2>
+			<form>
+				<input type="checkbox" name="Cricket" value="cricket" > Cricket<br>
+				<input type="checkbox" name="Football" value="Football"> Football<br>
+				<input type="checkbox" name="Tennis" value="Tennis"> Tennis
+			</form>
+		</div>
+
+	</body>
+</html>
+

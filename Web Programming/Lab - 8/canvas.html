@@ -1,0 +1,48 @@
+<html>
+ <head>
+	<title>Drawing a Rectangle</title>
+ </head>
+ <body>
+ <canvas id = "drawRectangle" width = "300" height = "100"	style = "border: 1px solid black;"></canvas>
+ <canvas id = "drawLines" width = "400" height = "200"></canvas>
+ <canvas id = "drawArcs" width = "225" height = "100"></canvas>
+ <canvas id = "grad" width="300" height="100"></canvas>
+ <canvas id = "text" width="200" height="100"></canvas>
+<script>
+
+var can1 = document.getElementById("drawRectangle");
+var cont = can1.getContext("2d");
+cont.fillStyle="blue";
+cont.fillRect(0,0,150,75);
+
+var canvas = document.getElementById("drawLines");
+var context = canvas.getContext("2d");
+context.beginPath(); 
+context.moveTo(10, 10); 
+context.lineTo(390, 10);
+context.lineWidth = 10; 
+context.strokeStyle = "red" ;
+context.stroke(); 
+
+
+var canvas1 = document.getElementById("drawArcs");
+ var context1 = canvas1.getContext("2d")
+ context1.beginPath();
+ context1.arc(100, 70, 60, 0, Math.PI * 2);
+ context1.fillStyle = "mediumslateblue";
+ context1.fill();
+ 
+ var can= document.getElementById("grad");
+ var ctx=can.getContext("2d");
+ var grd=ctx.createLinearGradient(0,0,200,0);
+ grd.addColorStop(0,"red");
+ grd.addColorStop(1,"white");
+ ctx.fillStyle=grd;
+ ctx.fillRect(10,10,150,80);
+ 
+var canvas2 = document.getElementById("text");
+ var context2 = canvas2.getContext("2d");
+ context2.font="30px Arial";
+ context2.fillText("Hello World", 10,50);
+ </script>
+ </body> </html>

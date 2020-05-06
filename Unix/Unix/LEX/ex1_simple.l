@@ -1,0 +1,7 @@
+
+
+%%
+
+"hello" {printf("good bye");}
+.                ;
+%%

@@ -1,0 +1,76 @@
+<html>
+	
+	<head>
+		<title>
+			Introduction to CSS
+		</title>
+		<style>
+			.main_image{
+				background: url(bi3.jpg) no-repeat center;
+				background-size:cover;
+				height:641px;
+				width:auto;
+				position:relative;
+			}
+			.inside{
+				background : url(bi4.jpg) center;
+				padding:20px;
+				background-size:cover;
+				width:220px;
+				height:320px;
+				position:absolute;
+				top: 120px;
+				left: 500px;
+				color: white;
+				border-radius:20px;
+				animation : object 5s infinite;
+			}
+			input[type=text], select {
+			  width: 200px;
+			  padding: 12px;
+			  position:relative;
+			  border: 1px solid ;
+			  border-radius: 4px;
+			  font-family:cambria;
+			}
+			input[type=password], select {
+			  width: 200px;
+			  font-family:cambria;
+			  padding: 12px;
+			  position:relative;
+			  border: 1px solid;
+			  border-radius: 4px;
+			}
+
+			input[type=submit] {
+			  width: 100px;
+			  background-color: #4CAF50;
+			  color: white;
+			  padding: 10px;
+			  border: none;
+			  border-radius: 4px;
+			  margin-left:50px;
+			  margin-top:30px;
+			}
+			@keyframes object 
+			{
+				50% {transform: rotate(180deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main_image">
+			<div class="inside">
+				<form>
+					<h2>Username</h2>&nbsp;
+					<input type="text" name="username" placeholder="Enter Username"></br>
+					<h2>Password	</h2>&nbsp;
+					<input type="password" name="password" placeholder="Enter Password"></br>
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>
+

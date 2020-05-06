@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			font-family : cambria;
+			color: green;
+			text-align: center;
+			font-size : 45px; 
+			text-shadow: 2px 1px 10px green;
+		}
+		h3{
+			font-family : cambria;
+			color: red;
+			text-align: center;
+			font-size : 20px; 
+			text-shadow: 2px 1px 10px red;
+		}
+		</style>
+		<script type = "text/javascript">
+			var num = window.prompt("Enter any number");
+			num = parseInt(num);
+			var num2=0,temp=num;
+			while(num>0)
+			{
+				var t = num % 10;
+				t = parseInt(t);
+				num2 = (num2 * 10) + t;
+				num2 = parseInt(num2);
+				num  = num / 10;
+				num = parseInt(num);
+			}
+				document.write("<br><h1>Reverse of the number " + temp + "  is " + num2 + " <h1><br>");
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

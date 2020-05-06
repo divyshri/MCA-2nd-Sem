@@ -1,0 +1,62 @@
+<html>
+	
+	<head>
+		<title>
+			Lab Assignement "Moving Image"
+		</title>
+		<style>
+			
+			body {
+		  		background-image: url("gr	adient.jpg");
+				background-repeat: no-repeat;
+			}
+			.top_heading{
+				align : center;
+				width : auto;
+				height : 60px;
+			}
+			h1{
+				text-align: center;
+				font-family : cambria;
+				color: green;
+				font-size : 45px; 
+				text-align :center;
+				text-shadow: 2px 1px 10px green;
+			}
+			.object{
+				height : 100px;
+				width : 100px;
+				background-color: red;
+				margin-left:600px;
+				margin-top:50px;
+				position: relative;
+				border-radius:100%;
+				animation-name: box;
+				animation-duration: 7s;
+				animation-iteration-count: 3;
+			}
+			@keyframes box {
+				0%   {background-color:red; left:0px; top:0px;}
+				12%  {background-color:red; left:200px; top:200px;}
+				24%  {background-color:red; left:0px; top:400px;}
+				36%  {background-color:red; left:-200px; top:200px;}
+				48% {background-color:red; left:0px; top:0px;}
+				60%  {background-color:red; left:-200px; top:200px;}
+				72%  {background-color:red; left:0px; top:400px;}
+				84%  {background-color:red; left:200px; top:200px;}
+				100% {background-color:red; left:0px; top:0px;}
+			}
+			
+		</style>
+	</head>
+	<body>
+	<div class="top_heading">
+		<h1>Animation Example Page</p>
+	</div>
+	<div class = "object">
+		
+	</div>
+		
+	</body>
+</html>
+

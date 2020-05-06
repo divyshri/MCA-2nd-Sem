@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h1{
+			text-align: center;
+			font-family : cambria;
+			color: green;
+			font-size : 45px; 
+			text-align :center;
+			text-shadow: 2px 1px 10px green;
+		}
+		</style>
+		<script type = "text/javascript">
+			var num;
+			num = window.prompt("Enter number to calculate average -1 to exit");
+			num = parseInt(num);
+			var a=10;
+			document.write("<table border='1'>")
+			document.write("<tr> <td> N </td><td> 10*N </td><td> 100* N</td><td> 1000* N </td></tr>")
+			for(i=1;i<=num;i++)
+			{
+				document.write("<tr><td>"+i+"</td><td>"+i*a+"</td><td>"+i*a*a+"</td><td>"+i*a*a*a+"</td></tr>");
+			}
+			document.write("</table>");
+
+			
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

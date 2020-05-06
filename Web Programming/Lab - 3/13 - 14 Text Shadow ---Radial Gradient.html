@@ -1,0 +1,89 @@
+<html>
+	
+	<head>
+		<title>
+			Introduction to CSS
+		</title>
+		<style>
+			div{
+				width:auto;
+				height:150px;
+				background-color:lightgrey;
+			}
+			h1{
+				text-align: center;
+				font-family : cambria;
+				color: green;
+				font-size : 45px; 
+				text-align :center;
+				text-shadow: 2px 1px 10px green;
+			}
+			.shadow_box{
+				background-color:red; 
+				box-shadow: 4px 3px 5px black;
+				height:50px; 
+				width :50px; 
+				margin-left:600px;
+			}
+			.gradient_linear{
+				background-image: linear-gradient(to bottom,#F7751A,white,green); 
+				width:200px;
+				height:82px; 
+				margin-left:530px;
+				
+			}
+			.gradient_radial{
+				background-image: radial-gradient(#F7751A,white,green); 
+				width:200px;
+				height:82px; 
+				margin-left:530px;
+				
+			}
+			.stroke
+			{
+				-webkit-text-stroke: 2px blue;
+				color: white;
+				font-family:cambria;
+				color: red;
+				font-size: 40px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h2 style = "text-align:center;padding:10px;">CSS Property -  "TEXT SHADOWS"</h2>
+				
+				<h1>Divyanshu Shrivastava</h1>
+		</div>
+		
+		<div>
+			<h2 style = "text-align:center;padding:10px;">CSS Property -  "ROUNDED CORNERS"</h2>
+				
+				<div style="background-color:red; border-radius:10px; height:50px; width :50px; margin-left:600px;">
+				</div>
+		</div>
+		<div>
+			<h2 style = "text-align:center;padding:10px;">CSS Property -  "BOX SHADOWS"</h2>
+				<div class = "shadow_box">
+				</div>
+		</div>
+		<div>
+			<h2 style = "text-align:center;padding:10px;">CSS Property -  "LINEAR GRADIENT"</h2>
+				<div class = "gradient_linear">
+				</div>
+		</div>
+		<div>
+			<h2 style = "text-align:center;padding:10px;">CSS Property -  "RADIAL GRADIENT"</h2>
+				<div class = "gradient_radial">
+				</div>
+		</div>
+		<div>
+			<h2 style = "text-align:center;padding:10px;">CSS Property -  "TEXT STROKE"</h2>
+					<h2 class="stroke">Example Text for Text Stroke</h2>
+				
+		</div>
+
+	</body>
+</html>
+

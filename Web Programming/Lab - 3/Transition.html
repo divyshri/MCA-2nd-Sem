@@ -1,0 +1,47 @@
+<html>
+	
+	<head>
+		<title>
+			Introduction to CSS
+		</title>
+		<style>
+			.main_image{
+				background: url(bi3.jpg) no-repeat center;
+				background-size:cover;
+				height:641px;
+				width:auto;
+				position:relative;
+			}
+			.inside{
+				background : url(bi4.jpg) center;
+				//display:none;
+				padding:20px;
+				background-size:cover;
+				width:50px;
+				height:320px;
+				position:absolute;
+				top: 120px;
+				left: 500px;
+				color: white;
+				border-radius:20px;
+				transition-property:width;
+				transition-duration:2s;
+			}
+			.inside:hover{
+				width:380px;
+				display:block;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="main_image">
+			<div class="inside">
+				
+			</div>
+		</div>
+		
+	</body>
+</html>
+

@@ -1,0 +1,53 @@
+<html>
+<head>
+<style>
+div{
+border:1px solid black;
+padding :10px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div id="demo" onmouseover="over()" onmouseout="out()"> nothing there </div>
+Name: <br>
+<input type="text" onfocus="f1(this)" onblur="f2()"><br>
+<p id="d1"></p>
+
+<input type="submit" value="submit" onclick="sub()">
+<input type="reset" value="reset" onclick="res()">
+<script>
+function over()
+{
+	document.getElementById("demo").innerHTML="this is mouseover";
+}
+function out()
+{
+	document.getElementById("demo").innerHTML="this is mouseout";
+}
+
+function f1(x)
+{
+x.style.background="yellow";
+}
+
+function f2()
+{
+document.getElementById("d1").innerHTML="data shown on mouseblur.";
+}
+function sub()
+{
+window.alert("are you sure to submit");
+}
+function res()
+{
+window.alert("are you sure to reset");
+}
+</script>
+
+
+
+</body>
+</html>

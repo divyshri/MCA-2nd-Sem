@@ -1,0 +1,20 @@
+
+<html>
+	<head>
+		<title>Demo</title>
+	<style type="text/css">
+		a img { border:none; }
+	</style>
+	<script type="text/javascript">
+		var images_array = ['1.jpg', '2.jpg', '3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','1.png', '2.png','3.png','4.png','5.png','6.png'];
+		var path = 'images/';
+		var num = Math.floor( Math.random() * images_array.length );
+		var img = images_array[ num ];
+		var imgStr = '<img src="' + path + img + '">';
+		document.write(imgStr);
+	</script>
+	</head>
+	<body>
+
+	</body>
+</html>

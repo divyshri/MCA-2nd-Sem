@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>
+			Counter Controlled !!!
+		</title>
+		<style>
+		h3{
+			font-family : cambria;
+			color: red;
+			text-align: center;
+			font-size : 20px; 
+			text-shadow: 2px 1px 10px red;
+		}
+		</style>
+		<script type = "text/javascript">
+			var one=0;
+			var two=0;
+			var three=0;
+			var four =0;
+			var five=0;
+			var six=0;
+			for(var i=0;i<6000;i++)
+			{
+				var k = Math.floor((Math.random() * 6)+1);
+				switch(k)
+				{
+				
+				case 1:
+					one++;
+					break;
+				case 2:
+					two++;
+					break;
+				case 3:
+					three++;
+					break;
+				case 4:
+					four++;
+					break;
+				case 5:
+					five++;
+					break;
+				case 6:
+					six++;
+					break;
+				}
+				
+			}
+				document.write("<h3>The frequency of FACE 1 is " + one + "</h3>");
+				document.write("<h3>The frequency of FACE 2 is " + two + "</h3>");
+				document.write("<h3>The frequency of FACE 3 is " + three + "</h3>");
+				document.write("<h3>The frequency of FACE 4 is " + four + "</h3>");
+				document.write("<h3>The frequency of FACE 5 is " + five + "</h3>");
+				document.write("<h3>The frequency of FACE 6 is " + six + "</h3>");
+			
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
